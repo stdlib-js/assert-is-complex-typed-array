@@ -24,30 +24,32 @@ limitations under the License.
 
 > Test if a value is a complex typed array.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-complex-typed-array
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isComplexTypedArray = require( '@stdlib/assert-is-complex-typed-array' );
+isComplexTypedArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array@umd/browser.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isComplexTypedArray;
+})();
+</script>
 ```
 
 #### isComplexTypedArray( value )
@@ -74,19 +76,24 @@ bool = isComplexTypedArray( [] );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Int8Array = require( '@stdlib/array-int8' );
-var Uint8Array = require( '@stdlib/array-uint8' );
-var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
-var Int16Array = require( '@stdlib/array-int16' );
-var Uint16Array = require( '@stdlib/array-uint16' );
-var Int32Array = require( '@stdlib/array-int32' );
-var Uint32Array = require( '@stdlib/array-uint32' );
-var Float32Array = require( '@stdlib/array-float32' );
-var Float64Array = require( '@stdlib/array-float64' );
-var Complex64Array = require( '@stdlib/array-complex64' );
-var Complex128Array = require( '@stdlib/array-complex128' );
-var isComplexTypedArray = require( '@stdlib/assert-is-complex-typed-array' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@umd/index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array@umd/index.js"></script>
+<script type="text/javascript">
+(function () {
 
 var arr = new Complex64Array( 10 );
 var bool = isComplexTypedArray( arr );
@@ -140,6 +147,11 @@ bool = isComplexTypedArray( {} );
 
 bool = isComplexTypedArray( null );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -233,11 +245,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-complex]: https://github.com/stdlib-js/assert-is-complex
+[@stdlib/assert/is-complex]: https://github.com/stdlib-js/assert-is-complex/tree/umd
 
-[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array
+[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array/tree/umd
 
-[@stdlib/assert/is-complex128array]: https://github.com/stdlib-js/assert-is-complex128array
+[@stdlib/assert/is-complex128array]: https://github.com/stdlib-js/assert-is-complex128array/tree/umd
 
 <!-- </related-links> -->
 
