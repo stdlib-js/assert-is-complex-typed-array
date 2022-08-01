@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is a complex typed array.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-complex-typed-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isComplexTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array@deno/mod.js';
+var isComplexTypedArray = require( '@stdlib/assert-is-complex-typed-array' );
 ```
 
 #### isComplexTypedArray( value )
@@ -39,7 +55,7 @@ import isComplexTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is
 Tests if a value is a complex typed array.
 
 ```javascript
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
+var Complex128Array = require( '@stdlib/array-complex128' );
 
 var bool = isComplexTypedArray( new Complex128Array( 10 ) );
 // returns true
@@ -59,18 +75,18 @@ bool = isComplexTypedArray( [] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@deno/mod.js';
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@deno/mod.js';
-import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@deno/mod.js';
-import Int16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@deno/mod.js';
-import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno/mod.js';
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
-import isComplexTypedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-complex-typed-array@deno/mod.js';
+var Int8Array = require( '@stdlib/array-int8' );
+var Uint8Array = require( '@stdlib/array-uint8' );
+var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
+var Int16Array = require( '@stdlib/array-int16' );
+var Uint16Array = require( '@stdlib/array-uint16' );
+var Int32Array = require( '@stdlib/array-int32' );
+var Uint32Array = require( '@stdlib/array-uint32' );
+var Float32Array = require( '@stdlib/array-float32' );
+var Float64Array = require( '@stdlib/array-float64' );
+var Complex64Array = require( '@stdlib/array-complex64' );
+var Complex128Array = require( '@stdlib/array-complex128' );
+var isComplexTypedArray = require( '@stdlib/assert-is-complex-typed-array' );
 
 var arr = new Complex64Array( 10 );
 var bool = isComplexTypedArray( arr );
@@ -155,7 +171,7 @@ bool = isComplexTypedArray( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -172,7 +188,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -185,8 +201,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-complex-typed-array.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-complex-typed-array
 
-[test-image]: https://github.com/stdlib-js/assert-is-complex-typed-array/actions/workflows/test.yml/badge.svg
-[test-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/actions/workflows/test.yml
+[test-image]: https://github.com/stdlib-js/assert-is-complex-typed-array/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-complex-typed-array/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-complex-typed-array?branch=main
@@ -198,13 +214,6 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/tree/deno
-[umd-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/tree/umd
-[esm-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/tree/esm
-
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
@@ -212,15 +221,23 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[umd]: https://github.com/umdjs/umd
+[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+[deno-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/tree/deno
+[umd-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/tree/umd
+[esm-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/tree/esm
+[branches-url]: https://github.com/stdlib-js/assert-is-complex-typed-array/blob/main/branches.md
+
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-complex-typed-array/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-complex]: https://github.com/stdlib-js/assert-is-complex/tree/deno
+[@stdlib/assert/is-complex]: https://github.com/stdlib-js/assert-is-complex
 
-[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array/tree/deno
+[@stdlib/assert/is-complex64array]: https://github.com/stdlib-js/assert-is-complex64array
 
-[@stdlib/assert/is-complex128array]: https://github.com/stdlib-js/assert-is-complex128array/tree/deno
+[@stdlib/assert/is-complex128array]: https://github.com/stdlib-js/assert-is-complex128array
 
 <!-- </related-links> -->
 
