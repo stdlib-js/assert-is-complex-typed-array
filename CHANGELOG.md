@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-11)
+## Unreleased (2025-09-01)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`8a0618b`](https://github.com/stdlib-js/stdlib/commit/8a0618bf4e79916cd2e32e9159e0299b7c1bcf34) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 
 </details>
