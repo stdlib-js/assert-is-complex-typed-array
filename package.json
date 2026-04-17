@@ -55,6 +55,7 @@
     "@stdlib/array-uint8c": "^0.2.3",
     "@stdlib/assert-is-boolean": "^0.2.3",
     "@stdlib/assert-is-browser": "^0.2.3",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/utils-inherit": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
